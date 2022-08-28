@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questão 6</title>
+</head>
+<body>
+    <noscript>Seu navegador não suporta JavaScript ou ele está desabilitado.</noscript>
+        
+        <h1>Exercício 1 </h1>
+
+        <h2>Questão 1</h2>
+        
+        a: <input type="number" id="meuA" value="">
+        <button onclick="numero()">Clique Aqui</button>
+        <p id="Resposta"></p>
+
+        <script>
+           function numero(){
+            var a = Number(document.getElementById("meuA").value);
+            if (a >= 10 && a <= 99) {
+                b = a%10
+                document.getElementById("Resposta").innerHTML = b ;
+            }
+            if (a < 10 && a >= 0){
+                document.getElementById("Resposta").innerHTML = a;
+            }
+            if (a >= 100 && a <= 999){
+                b = a%100
+                c = b%10
+                document.getElementById("Resposta").innerHTML = c;
+            }
+            if (a >= 1000 && a <= 9999){
+                b = a%1000
+                c = b%100
+                d = c%10
+                document.getElementById("Resposta").innerHTML = d;
+            }
+            if (a >= 10000 && a <= 99999){
+                b = a%10000
+                c = b%1000
+                d = c%100
+                e = d%10
+                document.getElementById("Resposta").innerHTML = e;
+            }
+        }
+        </script>
+</body>
+</html>

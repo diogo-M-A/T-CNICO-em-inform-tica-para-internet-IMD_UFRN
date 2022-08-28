@@ -1,0 +1,15 @@
+questão 1: 
+
+A história do HTML foi inventado em 1990 por um cientista chamado Tim Berners-Lee.
+A finalidade inicial era a de tornar possível o acesso e a troca de informações e 
+de documentação de pesquisas, entre cientistas de diferentes universidades. O 
+projeto inicial tornou-se um sucesso jamais imaginado por Tim Berners-Lee.
+
+questão 2:
+
+Guerra dos Browsers ou guerra dos navegadores Web,[1] foi um período (aproximadamente de 1995 a 1999)
+na história da Internet no qual a empresa Netscape, produtora do software browser (navegador) de mesmo nome, 
+perde a sua liderança absoluta no mercado de softwares dessa categoria para a empresa Microsoft, produtora 
+do Internet Explorer. A Guerra dos Browsers teve grande importância na área de informática pois resultou 
+numa reversão total no uso de um software para outro, além de gerar projetos como o Mozilla e o Opera. Hoje em dia,
+o grande vencedor da guerra dos browser foi o google chrome, se destacando como o navegador mais utilizado.

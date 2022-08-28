@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade web</title>
+</head>
+<body>
+    <body>
+        <noscript>Seu navegador não suporta JavaScript ou ele está desabilitado.</noscript>
+
+        <h1>Exercício</h1>
+
+        <h2>Atividade 01</h2>
+
+        x: <input type="number" id="meuX" value="">
+        y: <input type="number" id="meuY" value="">
+        <button onclick="minhaFuncao()">Clique Aqui</button>
+        <p id="pernambuco"></p>
+        <script>
+        function minhaFuncao() {
+          var x = Number(document.getElementById("meuX").value);
+          var y = Number(document.getElementById("meuY").value);
+
+          var z = (x + y);
+          document.getElementById("pernambuco").innerHTML = "a media é " + z;
+        }
+        </script>
+    </body>
+</body>
+</html>
