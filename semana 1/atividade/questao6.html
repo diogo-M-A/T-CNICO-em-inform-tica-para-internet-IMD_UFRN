@@ -20,32 +20,10 @@
         <script>
            function numero(){
             var a = Number(document.getElementById("meuA").value);
-            if (a >= 10 && a <= 99) {
-                b = a%10
-                document.getElementById("Resposta").innerHTML = b ;
+            var str = a.toString()
+            var r = str[str.length - 1]
+            document.getElementById("Resposta").innerHTML = r
             }
-            if (a < 10 && a >= 0){
-                document.getElementById("Resposta").innerHTML = a;
-            }
-            if (a >= 100 && a <= 999){
-                b = a%100
-                c = b%10
-                document.getElementById("Resposta").innerHTML = c;
-            }
-            if (a >= 1000 && a <= 9999){
-                b = a%1000
-                c = b%100
-                d = c%10
-                document.getElementById("Resposta").innerHTML = d;
-            }
-            if (a >= 10000 && a <= 99999){
-                b = a%10000
-                c = b%1000
-                d = c%100
-                e = d%10
-                document.getElementById("Resposta").innerHTML = e;
-            }
-        }
         </script>
 </body>
 </html>
