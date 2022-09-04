@@ -1,0 +1,31 @@
+p{
+    background-color: violet;
+    color: white;
+}
+body{
+    background-color: lightskyblue;
+}
+
+a:link {
+    color: rgb(9, 128, 39);
+  }
+  
+  /*  link visitado */
+  a:visited {
+    color: rgb(5, 56, 18);
+  }
+  
+  /* mouse sobre o link */
+  a:hover {
+    color: red;
+  }
+  
+  /* Link clicado */
+  a:active {
+    color: yellow;
+  }
+
+img{
+  width: 900px;
+}
+
