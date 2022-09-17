@@ -1,0 +1,45 @@
+thead {
+    background-color: #3f87a6;
+    color: #fff;
+}
+
+/*
+tr :nth-child(odd) {
+    background-color:lightgray;
+}
+o código alterou colunas ao invés de linhas então eu usei classes
+*/
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 100%;
+    padding: 5px;
+}
+
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 5px;
+}
+
+td {
+    text-align: left;
+}
+
+.c1{
+    text-align: center;
+}
+
+
+.c2{
+    background-color: lightgray;
+}
