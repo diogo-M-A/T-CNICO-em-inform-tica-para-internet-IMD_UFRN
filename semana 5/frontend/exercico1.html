@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inputs</title>
+    <link rel="stylesheet" href="./exercicio1.css">
+</head>
+
+<body>
+    <h1>Cadastro de produtos</h1>
+    <hr>
+    <br>
+
+    <form action="https://autoria-form.herokuapp.com/" method="GET">
+        <div><label for="sku">SKU:</label></div><div> <br>
+        <input type="text" id="sku" autofocus><br /><br />
+
+        <label for="produto">produto:</label> <br>
+        <input type="text" id="produto" autofocus><br /><br />
+
+        <label for="peso" >peso:</label> <br>
+        <input type="number" name="peso" id="peso" min="0" max="1000" step="1"><br><br>
+
+        <label for="unidade" id="unidade">unidade</label><br>
+        <select name="unidade">
+            <option value="grama">grama (g)</option>
+            <option value="quilograma">quilograma (kg)</option>
+            <option value="tonelada">tonelada (t)</option>
+        </select>
+
+        <br> <br>
+
+        <label for="largura">largura(cm):</label> <br>
+        <input type="number" name="largura" id="largura"><br><br>
+
+        <label for="altura">altura(cm):</label><br>
+        <input type="number" name="altura" id="altura"><br><br>
+
+        <label for="profundidade">profundidade(cm):</label><br>
+        <input type="number" name="profundidade" id="profundidade"><br><br>
+
+        <label for="i-submit"></label>
+        <input type="submit" value="Enviar" id="i-submit" class="b">
+
+        <label for="i-reset"></label>
+        <input type="reset" id="i-reset" value="limpar" class="b">
+    </form>
+
+</body>

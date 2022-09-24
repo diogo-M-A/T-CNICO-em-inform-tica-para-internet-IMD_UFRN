@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Programação Estruturada</title>
+</head>
+
+<body>
+    <h1>calcula dia da semana</h1>
+    dia do mês: <input id="a" value=""><br />
+    mês: <input id="b" value=""><br />
+    ano: <input id="c" value=""><br />
+    <button onclick='executarExercicio()'>OK</button>
+    <p id="resultado"></p>
+    <script>
+        function executarExercicio() {
+            var a = Number(document.getElementById('a').value);
+            var b = Number(document.getElementById('b').value);
+            var c = Number(document.getElementById('c').value);
+
+            // Escreva seus algoritmos a partir daqui.
+            var r1 = new Date(c+'/'+b+'/'+a).toString();
+            var r = r1.slice(0, 4) // atribua os resultados dos algoritmos a r
+            document.getElementById('resultado').innerHTML = r;
+        }
+    </script>
+</body>
+
+</html>

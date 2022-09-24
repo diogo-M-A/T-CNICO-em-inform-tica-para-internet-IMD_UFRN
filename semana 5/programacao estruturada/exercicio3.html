@@ -1,0 +1,30 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Programação Estruturada</title>
+    </head>
+
+    <body>
+        <h1>calcula idade</h1>
+        dia de nascimento: <input id="a" value=""><br />
+        mes de nascimento: <input id="b" value=""><br />
+        ano de nascimento: <input id="c" value=""><br />
+        <button onclick='executarExercicio()'>OK</button>
+        <p id="resultado"></p>
+        <script>
+            function executarExercicio() {
+                var a = Number(document.getElementById('a').value);
+                var b = Number(document.getElementById('b').value);
+                var c = Number(document.getElementById('c').value);
+
+                // Escreva seus algoritmos a partir daqui.
+                var r1 = new Date(c+'/'+b+'/'+a);
+                var r2 = new Date();
+                var r = r2 - r1 // atribua os resultados dos algoritmos a r
+                document.getElementById('resultado').innerHTML = parseInt(r*0.000000000031688738506811) + " anos";
+            }
+        </script>
+    </body>
+
+</html>
