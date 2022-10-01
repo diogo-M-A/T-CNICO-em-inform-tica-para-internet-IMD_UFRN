@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Programação Estruturada</title>
+</head>
+
+<body>
+    <h1>Entrada do Programa</h1>
+    N1: <input type="number" id="a" value=""><br />
+    N2: <input type="number" id="b" value=""><br />
+    <button onclick='executarExercicio()'>OK</button>
+    <p id="resultado"></p>
+    <script>
+        function executarExercicio() {
+            var a = Number(document.getElementById('a').value);
+            var b = Number(document.getElementById('b').value);
+            // implemente a partir daqui
+             // atribua o resultado dos seus algoritmos a r
+            var pares = 0;
+            var impares = 0;
+
+            for(i=a; i<=b; i++){
+                if(i%2==0){
+                    pares = pares + i
+                }else{
+                    impares = impares + i
+                }
+            }
+
+            var r = "Soma dos números pares: "+pares+', soma dos números ímpares: '+impares;
+            document.getElementById('resultado').innerHTML = r;
+        }
+    </script>
+</body>
+
+</html>
