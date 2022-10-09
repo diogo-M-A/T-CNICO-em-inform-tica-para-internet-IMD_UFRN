@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Programação Estruturada</title>
+</head>
+    <body>
+        <h1>questao 03</h1>
+        <button onclick='executarExercicio()'>OK</button>
+        <p id="resultado"></p>
+        <script>
+            function executarExercicio() {
+                var linhas = Number(prompt("digite a quant. de linhas"))
+                var colunas = Number(prompt("digite a quant. de colunas"))
+
+                var matriz = []
+                for(let lin=0 ; lin<linhas ; lin++){
+                    matriz[lin] = []
+                    for(let col=0; col<colunas ; col++){
+                        matriz[lin][col] = ''
+                    }                
+                }
+                for(let l=0;l<linhas;l++){
+                    for(let c=0;c<colunas;c++){
+                        matriz[l][c] = Number(prompt("digite um valor"))
+                    }
+                }
+
+                var c_soma = Number(prompt("qual coluna vc deseja somar?"))
+                var soma = 0
+                for(let i=0; i<colunas;i++){
+                    soma += matriz[i][c_soma-1]
+                }
+
+                /*var valores = ''
+                for(let l=0;l<linhas;l++){
+                    for(let c=0;c<colunas;c++){
+                        if(c<colunas-1){
+                            valores += matriz[l][c] + " "
+                        }else{
+                            valores += matriz[l][c] + "</br>"
+                        }
+                    }
+                }*/
+                document.getElementById('resultado').innerHTML = soma;
+            }
+        </script>
+    </body>
+</html>

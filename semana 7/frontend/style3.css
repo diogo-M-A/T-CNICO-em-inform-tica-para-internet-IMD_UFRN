@@ -1,0 +1,42 @@
+header img{
+    height: 400px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+article{
+    padding: 50px;
+    background-color: lightgrey;
+}
+
+#div1{
+    display: flex;
+    flex-direction: row;
+}
+
+#nav1{
+    color: black;
+}
+
+a{
+    color: white;
+}
+
+a:visited{
+    color: white;
+}

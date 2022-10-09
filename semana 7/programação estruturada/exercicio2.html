@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Programação Estruturada</title>
+</head>
+
+<body>
+    <h1>Entrada do Programa</h1>
+    <button onclick='executarExercicio()'>OK</button>
+    <p id="resultado"></p>
+    <script>
+        function executarExercicio() {
+            var lista = [];
+            var indices = [];
+            var a;
+            while (a != 0) {
+                a = Number(prompt("Informe um número:"));
+                lista.push(a);
+            }
+
+            var i;
+            var numero = 0;
+            var max = 0;
+            var contador = 0;
+
+            for (i = 0; i < lista.length; i++) {
+                contador = 0;
+                for (let j = 0; j < lista.length; j++) {
+                    if (lista[i] == lista[j]) {
+                        contador++;
+                    }
+                }
+                if (contador > max) {
+                    max = contador;
+                    numero = lista[i];
+                }
+            }
+            var resposta = "O número que mais se repetiu foi o " + numero + "; nas posições: ";
+            for (let j = 0; j < lista.length; j++) {
+                if (lista[j] == numero) {
+                    resposta = resposta + "<br>" + j;
+                }
+            }
+
+            document.getElementById('resultado').innerHTML = resposta;
+        }
+    </script>
+</body>
+
+</html>
