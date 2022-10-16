@@ -1,0 +1,32 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Programação Estruturada</title>
+    </head>
+
+    <body>
+        <h1>Entrada do Programa</h1>
+        <button onclick='executarExercicio()'>OK</button>
+        <p id="resultado"></p>
+        <script>
+           function lerArray(a){
+                    var v = [];
+                    for (var i =0; i < a; i++){
+                        var x = Number(prompt("Informe um número:"));
+                        v[i] = x;
+                    }  
+                    return v;
+                }
+
+                function executarExercicio() {
+                    // implemente a partir daqui
+                    // Exemplo de comando de entrada
+                    var a = Number(prompt("Informe a quantidade de números:"));
+                    r = lerArray(a);
+                    document.getElementById('resultado').innerHTML = r;
+                }
+        </script>
+    </body>
+
+</html>

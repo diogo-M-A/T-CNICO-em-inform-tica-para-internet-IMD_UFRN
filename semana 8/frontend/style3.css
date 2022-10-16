@@ -1,0 +1,88 @@
+header img{
+    height: 400px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+nav:hover{
+    color: yellow;
+    background-color: crimson;
+}
+
+article{
+    padding: 50px;
+    background-color: lightgrey;
+}
+
+#div1{
+    display: flex;
+    flex-direction: row;
+}
+
+#nav1{
+    color: black;
+}
+
+a{
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+header p{
+    display: none;
+}
+
+.navheader{
+    display: none;
+}
+
+.p1::first-letter {
+    font-size: 30px;
+  }
+
+@media only screen and (max-width: 768px){
+    #div1{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    header p{
+        display: block;
+        color: white;
+        background-color: black;
+        padding-top: 20px;
+        height: 40px;
+        text-align: start;
+    }
+
+    .navbody{
+        display: none;
+    }
+
+    .navheader{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 50px;
+    }
+}
