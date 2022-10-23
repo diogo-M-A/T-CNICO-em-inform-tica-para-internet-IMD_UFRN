@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Programação Estruturada</title>
+</head>
+
+<body>
+    <h1>Entrada do Programa</h1>
+    N1: <input type="text" id="n1"> <br />
+    N2:<input type="text" id="n2"> <br />
+    N3: <input type="text" id="n3"> <br /><button onclick='executarExercicio()'>OK</button>
+    <p id="resultado"></p>
+    <script>
+
+        function executarExercicio() {
+            try {
+                var n1 = Number(obterValor("n1"));
+                var n2 = Number(obterValor("n2"));
+                var n3 = Number(obterValor("n3"));
+                var media = calcularMedia(n1, n2, n3);
+                var verificaResultado = verificarResultado(media);
+                document.getElementById("resultado").innerHTML = verificaResultado;
+
+            } catch (erro) {
+                alert("Ocorreu um erro " + erro);
+
+            }
+        }
+
+        function obterValor(entrada) {
+            var numero = document.getElementById(entrada).value;
+            console.log(numero);
+            if (numero == "") {
+                throw new Error("Informe um numero Valido");
+            } else if (numero == undefined || numero == null || numero < 0 || numero > 10) {
+                throw new TypeError("Entrada não definida");
+            }
+            return numero;
+
+        }
+
+        function calcularMedia(n1, n2, n3) {
+            var media = (n1 + n2 + n3) / 3;
+            media = Math.round(media)
+            if (media < 0 || media > 10) {
+                throw new Error("Informe um media Valida");
+            }
+            return media;
+        }
+
+        function verificarResultado(media) {
+            var resultado = "";
+            if (media < 0 || media > 10) {
+                throw new RangeError("Informe a nota correta, entre 0 a 10");
+            }
+            else if (media >= 7) {
+                resultado = "Aprovado com média " + media;
+            } else if (media >= 3) {
+                resultado = "Aluno em recuperação, pois a média foi " + media;
+            } else {
+                resultado = "Aluno reprovado, pois ficou com média " + media;
+            }
+            return resultado;
+        }
+    </script>
+</body>
+
+</html>
