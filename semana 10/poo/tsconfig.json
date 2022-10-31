@@ -1,0 +1,7 @@
+//tsc --init
+
+{
+  "compilerOptions": {
+      "target": "es5"
+  }
+}

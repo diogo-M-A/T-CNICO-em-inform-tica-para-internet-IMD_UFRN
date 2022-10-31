@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>atividade 2</title>
+</head>
+<body>
+  <script>
+    //equação de segundo grau
+    var a = prompt('Informe o valor de a para calcular a equação de segundo grau')
+    var b = prompt('Informe o valor de b')
+    var c = prompt('informe o valor de c')
+
+    var delta = b*b - 4*a*c
+    var x1 = (-b + Math.sqrt(delta)) / 2*a
+    var x2 = (-b - Math.sqrt(delta)) / 2*a
+
+    if(delta < 0 || 2*a == 0){
+      alert("impossível calcular")
+    }else{
+      alert('primeira raiz = ' + x1 + '\nsegunda raiz = ' + x2)
+    }
+
+    
+  </script>
+</body>
+</html>
