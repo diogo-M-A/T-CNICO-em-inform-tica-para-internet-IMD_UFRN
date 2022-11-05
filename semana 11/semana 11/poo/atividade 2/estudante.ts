@@ -24,7 +24,7 @@ class Estudante{
 var e1 = new Estudante(4828, 'diogo', 8777)
 var e2 = new Estudante(4348, 'araujuo', 1919)
 
-console.log(e1.detalhar)
-console.log(e2.detalhar)
+console.log(e1.detalhar())
+console.log(e2.detalhar())
 
 alert('Código rodando no console. objetos e1 e e2')
