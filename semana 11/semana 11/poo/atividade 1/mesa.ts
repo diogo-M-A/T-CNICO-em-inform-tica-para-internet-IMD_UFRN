@@ -24,8 +24,8 @@ var m1 = new MesaDeJantar('ferro', 8, 100)
 var m2 = new MesaDeJantar('madeira', 6 )
 var m3 = new MesaDeJantar('vidro')
 
-console.log(m1.detalhar())
-console.log(m2.detalhar())
-console.log(m3.detalhar())
+console.log(m1.detalhar()) //edição: os parênteses estavam faltando
+console.log(m2.detalhar()) //edição: os parênteses estavam faltando
+console.log(m3.detalhar()) //edição: os parênteses estavam faltando
 
 alert('código rodando no console: objetos m1, m2 e m3')

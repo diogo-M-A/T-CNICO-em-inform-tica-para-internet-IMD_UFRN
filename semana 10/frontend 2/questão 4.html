@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>questão 4</title>
+</head>
+
+<body>
+  <script>
+    function calcularArea(propriedade, formula) {
+      return formula(propriedade);
+    }
+
+    var quadrado = (l) => { return l * l }
+    var circulo = (r) => { return 3.14 * r * r }
+
+    var a1 = prompt('insira o lado ou o raio')
+    var a2 = prompt('insira a função: \n1 - quadrado \n2 - círculo')
+
+    if (a2 == 1) {
+      alert(calcularArea(a1, quadrado))
+    } else if (a2 == 2) {
+      alert(calcularArea(a1, circulo))
+    } else {
+      alert('inválido')
+    }
+
+  </script>
+</body>
+
+</html>
