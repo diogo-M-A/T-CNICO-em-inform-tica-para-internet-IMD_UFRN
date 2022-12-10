@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Videos do IMD/UFRN</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="span12">
+                <h2 class="page-header">Vídeos do IMD/UFRN</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="span3">
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=m0XLzn5e3CA">Institucional IMD</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=_0fVH-7Q6uQ">Parque Metrópole</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=LHpQ_V3uxRk">Talento Metrópole</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="http://www.teaching-materials.org/common/youtube.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            var links = $('a');
+            for (var i = 0; i < links.length; i++) {
+                var href = $(links[i]).attr('href');
+                var thumbnailUrl = youtube.generateThumbnailUrl(href);
+                var img = $('<img>').attr('src', thumbnailUrl);
+                $(links[i]).prepend(img);
+            }
+        });
+
+    </script>
+
+
+</body>
+
+</html>
